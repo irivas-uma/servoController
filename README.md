@@ -27,6 +27,12 @@ cd ..
 catkin_make
 ```
 
+## To launch
+
+```bash
+roslaunch servo servo.launch
+```
+
 ## Device functions
 
 This function sends a position to the motor plugged in channel *servo* (from 0 to 5):
@@ -40,12 +46,6 @@ This function gets the current position of the motor:
 ```bash
 controller.getServoPosition(position,servo)
 ``` 
-
-## To launch
-
-```bash
-roslaunch servo servo.launch
-```
 
 #### 1. servo_node
 
@@ -73,3 +73,5 @@ And the following in */servo/CMakeLists.txt*:
 ```bash
 add_executable(servo_node src/servo_node.cpp src/servoController.cpp)
 ```
+
+The servo target sets the range in % of the servo, so target must be between 0 and 100. 
