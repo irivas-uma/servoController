@@ -1,11 +1,11 @@
-oneMin: 1240
-oneMax: 1600
+servo1_min: 1240
+servo1_max: 1600
 
-twoMin: 1690
-twoMax: 1950
+servo2_min: 1690
+servo2_max: 1950
 
-threeMin: 1690
-threex: 1950
+servo3_min: 1690
+servo3_max: 1950
 
-fourMin: 1690
-fourMax: 1950
+servo4_min: 1690
+servo4_max: 1950
